@@ -1,0 +1,159 @@
+/************* Main *************/
+body {
+  background-color: #3e4e5d;
+  color: #0f1218;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  font-family: 'Karla', sans-serif;
+}
+
+header {
+  top: 40%;
+  transform: translate(0, -40%);
+}
+
+.bigbox {
+  margin-top: 5%;
+  background-color: #eee0d7;
+  padding: 5%;
+}
+
+.footerbox {
+  padding: 5%;
+  background-color: #eee0d7;
+  margin-bottom: 5%;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 150px;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  color: #632327;
+}
+
+h2 {
+  padding-top: 30px;
+  color: #632327;
+}
+
+form {
+  margin: 50px;
+}
+
+a {
+  color: #632327;
+}
+
+a:hover {
+  color: #632327;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  /* margin: 10px; */
+}
+
+.welcome {
+  text-align: right;
+  position: relative;
+  right: 0;
+  color: #405754;
+  font-size: 12px;
+}
+
+.container {
+  margin: 10px;
+}
+
+.table {
+  margin: 10px;
+}
+
+.flex-column {
+  margin: 10px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #f05809;
+}
+
+.btn-primary {
+  background-color: #f05809;
+  border-color: #f05809;
+}
+
+.btn-primary:hover {
+  background-color: #f05809;
+  border-color: #f05809;
+}
+
+.page-item.active .page-link {
+  background-color: #f05809;
+  border-color: #f05809;
+}
+
+.page-link {
+  color: #612014;
+}
+
+.table .thead-dark th {
+  background-color: #557571;
+  border-color: #405754;
+}
+
+
+/************* Login Page *************/
+.err {
+  color: red;
+}
+
+.form-signin {
+  width: 50%;
+  position: relative;
+  left: 40%;
+  transform: translate(-40%, 0);
+  padding: 5%;
+}
+
+.loginsubmit {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/************* Home *************/
+.homebanner {
+  width: 100%;
+}
+
+.home-image {
+  position: relative;
+  left: 10%;
+  transform: translate(-10%, 0);
+}
+
+/************* Success Pages *************/
+.success-message {
+  color: green;
+  padding-top: 30px;
+}
+
+/************* Footer *************/
+footer {
+  text-align: center;
+  color: #632327;
+  font-size: 0.8rem;
+  padding: 50px;
+}
