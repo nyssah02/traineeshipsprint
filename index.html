@@ -55,10 +55,10 @@
         <br>
         <input type="hidden" name="action" value="login">
         <label for="inputUsername" class="sr-only">Username</label>
-        <input type="text" minlength="8" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
+        <input type="text" minlength="8" id="inputUsername" class="form-control" placeholder="Username" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "15" required>
         <br>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" minlength="10" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <input type="password" minlength="8" id="inputPassword" class="form-control" placeholder="Password" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "15" required>
         <br>
         <br>
         <button class="btn btn-lg btn-primary btn-block loginsubmit" type="submit">Sign in</button>
