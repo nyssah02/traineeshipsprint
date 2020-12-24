@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -15,71 +17,71 @@
 
 <body>
 
-<div class="bigbox">
-  <header>
+  <div class="bigbox">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/bankr_logo.svg" alt="login-logo" class="logo">
+          </div>
+          <div class="col">
+            <h1>BANKR - Bank Management System</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" href="home.jsp">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="customermanagement.jsp">Customer Management</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="accountmanagement.jsp">Account Management</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="status.jsp">Status Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="accountoperations.jsp">Account Operations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.jsp">Logout</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="welcome">Welcome, Admin</p>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-2">
-          <img src="images/bankr_logo.svg" alt="login-logo" class="logo">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="createaccount.jsp">Create Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="deleteaccount.jsp">Delete Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accountstatus.jsp">Status</a>
+            </li>
+          </ul>
         </div>
-        <div class="col">
-          <h1>BANKR - Bank Management System</h1>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <nav>
-    <ul class="nav nav-pills nav-fill">
-    <li class="nav-item">
-      <a class="nav-link" href="home.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="customermanagement.html">Customer Management</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="accountmanagement.html">Account Management</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="status.html">Status Details</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="accountoperations.html">Account Operations</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Logout</a>
-    </li>
-  </ul>
-  </nav>
+        <div class="col-10">
+          <h2>Delete Account</h2><br>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <p class="welcome">Welcome, Admin</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-2">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="createaccount.html">Create Account</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="deleteaccount.html">Delete Account</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="accountstatus.html">Status</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-10">
-        <h2>Delete Account</h2><br>
-
-        <!-- <form action="<%= request.getContextPath() %>/register" method="post"> -->
+          <!-- <form action="<%= request.getContextPath() %>/register" method="post"> -->
 
           <div class="form-group">
             <label for="exampleFormControlSelect1">Account ID: </label>
@@ -93,7 +95,8 @@
 
           <div class="form-group">
             <label for="exampleFormControlInput1">Account type: </label>
-            <input type="text" minlength="5" maxlength="50" class="form-control" id="exampleFormControlInput1" placeholder="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "50" required>
+            <input type="text" minlength="5" maxlength="50" class="form-control" id="exampleFormControlInput1" placeholder="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" maxlength="50" required>
           </div>
 
           <div class="form-group row">
@@ -102,25 +105,25 @@
             </div>
           </div>
 
-        </form>
-        
+          </form>
+
+        </div>
       </div>
     </div>
   </div>
-  </div>
 
-<div class="footerbox">
-  <footer>
-    <div class="footer">Copyright @ 2020 Sprint Project Team C</div>
-    <br>
+  <div class="footerbox">
+    <footer>
+      <div class="footer">Copyright @ 2020 Sprint Project Team C</div>
+      <br>
       <div>
         <a href="aboutus.html" class="text-dark">About Us </a>|
         <a href="contactus.html" class="text-dark">Contact Us </a>|
         <a href="queries.html" class="text-dark">Queries </a>
       </div>
-    <br>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-  </footer>
+      <br>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

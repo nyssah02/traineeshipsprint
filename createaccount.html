@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -32,22 +34,22 @@
     <nav>
       <ul class="nav nav-pills nav-fill">
         <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="home.jsp">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="customermanagement.html">Customer Management</a>
+          <a class="nav-link" href="customermanagement.jsp">Customer Management</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="accountmanagement.html">Account Management</a>
+          <a class="nav-link active" href="accountmanagement.jsp">Account Management</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="status.html">Status Details</a>
+          <a class="nav-link" href="status.jsp">Status Details</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="accountoperations.html">Account Operations</a>
+          <a class="nav-link" href="accountoperations.jsp">Account Operations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Logout</a>
+          <a class="nav-link" href="index.jsp">Logout</a>
         </li>
       </ul>
     </nav>
@@ -65,13 +67,13 @@
         <div class="col-2">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="createaccount.html">Create Account</a>
+              <a class="nav-link active" href="createaccount.jsp">Create Account</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="deleteaccount.html">Delete Account</a>
+              <a class="nav-link" href="deleteaccount.jsp">Delete Account</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="accountstatus.html">Status</a>
+              <a class="nav-link" href="accountstatus.jsp">Status</a>
             </li>
           </ul>
         </div>
@@ -79,18 +81,17 @@
         <div class="col-10">
           <h2>Create Account</h2>
 
-          <!-- NOTE TO JAVA PROGRAMMER: request.getRequestDispatcher("/WEB-INF/views/accountsuccess.jsp") -->
-          <!-- note to self: create accountsuccess.jsp, change table below -->
+          <!-- NOTE: request.getRequestDispatcher redirects to createaccountsuccess.jsp -->
           <form action="<%= request.getContextPath() %>/register" method="POST">
             <div class="form-group">
               <label for="exampleFormControlInput1">Customer ID: *</label>
-              <input type="number" minlength="9" maxlength="9" class="form-control" id="exampleFormControlInput1" placeholder="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                type="number" maxlength="9" required>
+              <input type="number" value="<c:out value='${customer.cusId}' />" minlength="9" maxlength="9" class="form-control" id="exampleFormControlInput1" placeholder=""
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength="9" required>
             </div>
 
             <div class="form-group">
               <label for="exampleFormControlSelect1">Account Type: *</label>
-              <select class="form-control" id="exampleFormControlSelect1" required>
+              <select class="form-control" value="<c:out value='${account.accType}' />" id="exampleFormControlSelect1" required>
                 <option>Savings</option>
                 <option>Current</option>
               </select>
@@ -98,8 +99,8 @@
 
             <div class="form-group">
               <label for="exampleFormControlInput1">Deposit Amount: *</label>
-              <input type="number" minlength="1" maxlength="12" class="form-control" id="exampleFormControlInput1" placeholder="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                type="number" maxlength="12" required>
+              <input type="number" value="<c:out value='${account.depAmt}' />" minlength="1" maxlength="12" class="form-control" id="exampleFormControlInput1" placeholder=""
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength="12" required>
             </div>
 
             <div class="compulsory">* Fields are compulsory</div>

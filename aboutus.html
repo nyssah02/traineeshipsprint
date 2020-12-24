@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -14,82 +16,103 @@
 </head>
 
 <body>
-<div class="bigbox">
-  <header>
+  <div class="bigbox">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/bankr_logo.svg" alt="login-logo" class="logo">
+          </div>
+          <div class="col">
+            <h1>BANKR - Bank Management System</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" href="home.jsp">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="customermanagement.jsp">Customer Management</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="accountmanagement.jsp">Account Management</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="status.jsp">Status Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="accountoperations.jsp">Account Operations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.jsp">Logout</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="welcome">Welcome, Admin</p>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-2">
-          <img src="images/bankr_logo.svg" alt="login-logo" class="logo">
-        </div>
-        <div class="col">
-          <h1>BANKR - Bank Management System</h1>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <nav>
-    <ul class="nav nav-pills nav-fill">
-    <li class="nav-item">
-      <a class="nav-link active" href="home.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="customermanagement.html">Customer Management</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="accountmanagement.html">Account Management</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="status.html">Status Details</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="accountoperations.html">Account Operations</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Logout</a>
-    </li>
-  </ul>
-  </nav>
+        </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <p class="welcome">Welcome, Admin</p>
+        <div class="col-10">
+          <h2>About Us!</h2><br>
+          <p>We are team C!</p>
+
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Clare Toh - Scrum Master</td>
+                <td>1887950</td>
+              </tr>
+              <tr>
+                <td>Anisah Johari</td>
+                <td>1887937</td>
+              </tr>
+              <tr>
+                <td>Caleb Yang</td>
+                <td>1887918</td>
+              </tr>
+              <tr>
+                <td>Canyon Lee</td>
+                <td>1887903</td>
+              </tr>
+              <tr>
+                <td>Soleh Ihsan</td>
+                <td>1887908</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-2">
-
-      </div>
-
-      <div class="col-10">
-        <h2>About Us!</h2><br>
-        <p>We are team C!</p>
-        <div>Clare Toh (SM) - 1887950</div>
-        <div>Anisah Johari - 1887937</div>
-        <div>Caleb Yang - 1887918</div>
-        <div>Canyon Lee - 1887903</div>
-        <div>Soleh Ihsan - 1887908</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="footerbox">
-  <footer>
-    <div class="footer">Copyright @ 2020 Sprint Project Team C</div>
-    <br>
+  <div class="footerbox">
+    <footer>
+      <div class="footer">Copyright @ 2020 Sprint Project Team C</div>
+      <br>
       <div>
         <a href="aboutus.html" class="text-dark">About Us </a>|
         <a href="contactus.html" class="text-dark">Contact Us </a>|
         <a href="queries.html" class="text-dark">Queries </a>
       </div>
-    <br>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-  </footer>
+      <br>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
